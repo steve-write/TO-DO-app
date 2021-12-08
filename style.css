@@ -1,0 +1,89 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper{
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    height: 98%;
+    width: 85%;
+}
+input{
+    /* width: 100px; */
+    height: 40px;
+    border-radius: 5px;
+}
+header{
+    background-color: rgba(192, 192, 192, 0.322);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.title{
+    margin-left: 20px;
+    font-size: 30px;
+}
+ul{
+    height: 250px;
+}
+ul li {
+    list-style: none;
+    margin: 5px;
+    
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+}
+ul li::before{
+    content: '';
+    background-color: rgba(158, 158, 158, 0.411);
+    margin-right: 20px;
+    width: 15px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+.delete{
+    /* margin-left: 200px; */
+    background-color: rgb(118, 59, 126);
+    color: white;
+    border-radius: 3px;
+}
+.delete:hover{
+    user-select: toggle;
+}
+#search-books input{
+    width: 20rem;
+    border: 2px;
+    margin-bottom: 20px;
+}
+
+#add-book #hide{
+    width: 30px;
+}
+#add-book label{
+    line-height: 52px;
+}
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#tabbed-content .panel{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+#tabbed-content .panel.active{
+    display: block;
+}
